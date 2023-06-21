@@ -481,9 +481,32 @@ input {
   border-radius: 2px;
 }
 
+.cta-text h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.cta-text p {
+  margin-bottom: 3rem;
+}
+
 
 button {
   width: 100%;
   padding: 0.7rem 1rem;
+  font-family: inherit;
+
+  color: #e9e9ea;
+  background-color: #fa5252;
+  border: 1px solid #fa5252;
+  cursor: pointer;
+  
+
+  transition: all 0.3s;
 }
 
+button:hover {
+  background-color: #f03e3e;
+  border: 1px solid #fa5252;
+}
