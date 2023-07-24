@@ -184,10 +184,10 @@
     /* margin: auto; */
   }
 
-  .creativity-phase-1, .creativity-phase-2 {
-    
+  .creativity-phase-1,
+  .creativity-phase-2 {
     margin: 0 1rem;
-}
+  }
 
   .brand-text.watch {
     transform: translate(8%, 200%);
@@ -197,40 +197,35 @@
     display: flex;
     gap: 5rem;
     padding: 0 4rem;
-}
+  }
 }
 
 /************************************/
 /* BELOW 699PX (smaller Tablet)*/
 /************************************/
 @media (max-width: 44em) {
-  
   .brand-text.watch {
     transform: translate(7%, 122%);
+  }
 }
-
-}
-
-
 
 /************************************/
 /* BELOW 544PX (smaller Tablet)*/
 /************************************/
 @media (max-width: 34em) {
-
   .hero {
     padding: 0 1rem;
     gap: 6.4rem;
     align-items: center;
     justify-content: center;
-}
+  }
 
   .creativity-img img {
     display: block;
     width: 80%;
     margin: auto;
   }
-  
+
   .brand-text.watch {
     transform: translate(7%, 110%);
   }
@@ -244,24 +239,20 @@
     border: 1px solid #7048e8;
     height: 33rem;
     width: auto;
+  }
 }
-
-}
-
 
 /************************************/
 /* BELOW 520PX (smaller Tablet)*/
 /************************************/
 @media (max-width: 34em) {
-
-
   .hero {
     padding: 0 1rem;
     gap: 6.4rem;
     align-items: center;
     justify-content: center;
-}
-  
+  }
+
   .brand-text.watch {
     transform: translate(7%, 80%);
   }
@@ -273,51 +264,48 @@
   .hero-btn {
     gap: 2rem;
     justify-content: space-around;
-}
+  }
 
-.cta-body {
-  padding: 6rem 2rem;
+  .cta-body {
+    padding: 6rem 2rem;
+  }
 }
-
-}
-
 
 /************************************/
 /* BELOW 520PX (smaller Tablet)*/
 /************************************/
 @media (max-width: 34em) {
-
-  .hero-button:link, .hero-button:visited {
+  .hero-button:link,
+  .hero-button:visited {
     display: inline-block;
     text-decoration: none;
     font-size: 1rem;
     padding: 1rem 8rem;
-}
+  }
 
-  
   .brand-text.watch {
     transform: translate(7%, 50%);
   }
 
   .creativity-sub-text {
     gap: 1rem;
-    padding: 0 2rem
+    padding: 0 2rem;
   }
 
   .creativity-phase-2 {
     gap: 3rem;
   }
-
 }
 
-
 /************************************/
-/* BELOW 520PX (smaller Tablet)*/
+/* BELOW 402PX (smaller Tablet)*/
 /************************************/
-@media (max-width: 34em) {
+@media (max-width: 25em) {
   .most-popular {
     left: 45%;
   }
+
+  .brand-text.watch {
+    transform: translate(8%, 30%);
+  }
 }
-
-
