@@ -213,6 +213,13 @@
 /************************************/
 @media (max-width: 34em) {
 
+  .hero {
+    padding: 0 1rem;
+    gap: 6.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
   .creativity-img img {
     display: block;
     width: 80%;
