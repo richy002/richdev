@@ -68,7 +68,7 @@
     /* 9px / 16px = 0.5 = 50% */
 
     /* Percentage of user's browser font-size setting */
-    font-size: 45%;
+    font-size: 50%;
   }
 }
 
@@ -212,6 +212,12 @@
 /* BELOW 544PX (smaller Tablet)*/
 /************************************/
 @media (max-width: 34em) {
+
+  .creativity-img img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
   
   .brand-text.watch {
     transform: translate(7%, 110%);
@@ -268,6 +274,14 @@
 /* BELOW 520PX (smaller Tablet)*/
 /************************************/
 @media (max-width: 34em) {
+
+  .hero-button:link, .hero-button:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 6.5rem;
+}
+
   
   .brand-text.watch {
     transform: translate(7%, 50%);
