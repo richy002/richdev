@@ -184,6 +184,11 @@
     /* margin: auto; */
   }
 
+  .creativity-phase-1, .creativity-phase-2 {
+    
+    margin: 0 1rem;
+}
+
   .brand-text.watch {
     transform: translate(8%, 200%);
   }
@@ -303,6 +308,16 @@
     gap: 3rem;
   }
 
-
-
 }
+
+
+/************************************/
+/* BELOW 520PX (smaller Tablet)*/
+/************************************/
+@media (max-width: 34em) {
+  .most-popular {
+    left: 45%;
+  }
+}
+
+
