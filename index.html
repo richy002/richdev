@@ -14,24 +14,36 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
 
     <title>Rich |</title>
   </head>
   <body>
     <header class="header">
+      <a class="header-logo main-nav-link" href="#"> Rich<span>Dev</span></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <span>
-            <a class="header-logo main-nav-link" href="#"> RichDev </a>
-          </span>
           <li><a class="main-nav-link" href="#">Home</a></li>
           <li><a class="main-nav-link" href="#">Pricing</a></li>
           <li><a class="main-nav-link" href="#">News</a></li>
           <li><a class="main-nav-link" href="#">Page</a></li>
+          
+          <div>
+            <a class=" view-btn" href="#"> View on deseign </a>
+          </div>
         </ul>
+
       </nav>
 
-      <a class="main-nav-link view-btn" href="#"> View on deseign </a>
+      
+
+      
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+
     </header>
 
     <main>
@@ -45,13 +57,8 @@
             </p>
 
             <div class="hero-btn">
-              <a class="hero-button play" href="#"
-                ><ion-icon
-                  class="hero-icon-play"
-                  name="play-outline"
-                ></ion-icon>
-                Demo</a
-              >
+              <a class="hero-button play" href="#" >
+                Demo</a>
               <a class="hero-button" href="#">Get started</a>
             </div>
           </div>
@@ -351,9 +358,43 @@
               />
             </div>
             <div class="cta-btn">
-              <button>Get notified</button>
+              <button class="notified">Get notified</button>
             </div>
          </div>
+        </div>
+      </section>
+
+      <section class="footer container">
+        <div class=" grid grid--4-col">
+          <nav class="nav-col">
+            <p>Navigation</p>
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+          </nav>
+
+          <nav class="nav-col">
+            <p>Company</p>
+            <li>About</li>
+            <li>Team</li>
+            <li>Plan</li>
+            <li>News</li>
+          </nav>
+
+          <nav class="nav-col">
+            <p>Template</p>
+            <li>Style guide</li>
+            <li>Image Licensing</li>
+            <li>Changelog</li>
+            <li>Instruction</li>
+          </nav>
+
+          <nav class="nav-col footer-icons">
+            <li><a href="#"><ion-icon class="footer-icon" name="logo-github"></ion-icon> Github</a></li>
+            <li><a href="#"><ion-icon class="footer-icon"  name="logo-twitter"></ion-icon> Twitter</a></li>
+            <li><a href="#"><ion-icon class="footer-icon" name="logo-instagram"></ion-icon> Instagram</a></li>
+            <li><a href="#"><ion-icon class="footer-icon" name="logo-youtube"></ion-icon> Youtube</a></li>
+          </nav>
         </div>
       </section>
     </main>
@@ -366,5 +407,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="/script.js"></script>
   </body>
 </html>

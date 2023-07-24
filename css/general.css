@@ -77,6 +77,10 @@ body {
   row-gap: 6.4rem;
 }
 
+.grid--1-col {
+  grid-template-columns: 1fr;
+}
+
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -130,9 +134,6 @@ body {
 /* GENERAL REUSABLE COMPONENT */
 /************************************/
 
-.news-gallery img {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
+
 
 

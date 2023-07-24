@@ -1,0 +1,287 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/************************************/
+/* BELOW 1344PX (Smaller desktop)*/
+/************************************/
+
+@media (max-width: 84em) {
+  .header {
+    max-width: 120rem;
+  }
+}
+
+/************************************/
+/* BELOW 1230PX (Landscape Tablet)*/
+/************************************/
+
+@media (max-width: 77em) {
+  html {
+    /* 9px / 16px = 0.5625 = 56.25% */
+
+    /* Percentage of user's browser font-size setting */
+    font-size: 56.25%;
+  }
+
+  .hero-icon-play {
+    width: 7px;
+    height: 7px;
+  }
+
+  .hero-button:link,
+  .hero-button:visited {
+    display: inline-block;
+    text-decoration: none;
+
+    font-size: 1rem;
+    padding: 1rem 8.5rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+}
+
+/************************************/
+/* BELOW 1100PX (Landscape Tablet)*/
+/************************************/
+
+@media (max-width: 69em) {
+  html {
+    /* 9px / 16px = 0.5 = 50% */
+
+    /* Percentage of user's browser font-size setting */
+    font-size: 50%;
+  }
+
+  body {
+    margin: 0 3rem;
+  }
+}
+
+/************************************/
+/* BELOW 980PX (Landscape Tablet)*/
+/************************************/
+
+@media (max-width: 62em) {
+  html {
+    /* 9px / 16px = 0.5 = 50% */
+
+    /* Percentage of user's browser font-size setting */
+    font-size: 45%;
+  }
+}
+
+/************************************/
+/* BELOW 944PX (Tablet)*/
+/************************************/
+@media (max-width: 59em) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-btn {
+    justify-content: space-around;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    display: block;
+    width: 70%;
+    align-content: center;
+    margin: auto;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #212529;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    transition: all 0.5s ease-out;
+
+    /* display: flex; */
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 4.8rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.5rem;
+  }
+}
+
+/************************************/
+/* BELOW 750PX (smaller Tablet)*/
+/************************************/
+@media (max-width: 47em) {
+  .how-info {
+    grid-template-columns: 1fr;
+  }
+
+  .how-box {
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem;
+  }
+
+  .creativity-phase-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .creativity-text .heading-secondary,
+  .creativity-text-mid {
+    text-align: center;
+  }
+
+  .creativity-img img {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+
+  .brand-text.watch {
+    transform: translate(8%, 200%);
+  }
+
+  .creativity-sub-text {
+    display: flex;
+    gap: 5rem;
+    padding: 0 4rem;
+}
+}
+
+/************************************/
+/* BELOW 699PX (smaller Tablet)*/
+/************************************/
+@media (max-width: 44em) {
+  
+  .brand-text.watch {
+    transform: translate(7%, 122%);
+}
+
+}
+
+
+
+/************************************/
+/* BELOW 544PX (smaller Tablet)*/
+/************************************/
+@media (max-width: 34em) {
+  
+  .brand-text.watch {
+    transform: translate(7%, 110%);
+  }
+
+  .brand-box {
+    grid-template-columns: 1fr;
+  }
+
+  .card-text {
+    padding: 2rem;
+    border: 1px solid #7048e8;
+    height: 33rem;
+    width: auto;
+}
+
+}
+
+
+/************************************/
+/* BELOW 520PX (smaller Tablet)*/
+/************************************/
+@media (max-width: 34em) {
+
+
+  .hero {
+    padding: 0 6rem;
+    gap: 6.4rem;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .brand-text.watch {
+    transform: translate(7%, 80%);
+  }
+
+  .creativity-phase-2 {
+    gap: 3rem;
+  }
+
+  .hero-btn {
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.cta-body {
+  padding: 6rem 2rem;
+}
+
+}
+
+
+/************************************/
+/* BELOW 520PX (smaller Tablet)*/
+/************************************/
+@media (max-width: 34em) {
+  
+  .brand-text.watch {
+    transform: translate(7%, 50%);
+  }
+
+  .creativity-sub-text {
+    gap: 1rem;
+    padding: 0 2rem
+  }
+
+  .creativity-phase-2 {
+    gap: 3rem;
+  }
+
+
+
+}

@@ -16,19 +16,40 @@
   border-bottom: 2px solid #e9e9ea;
 
   margin-bottom: 4rem;
+  position: relative;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
+/* .main-nav-list {
+  
   align-items: center;
+  justify-content: center; 
+  vertical-align: middle;
+} */
+
+ ul .main-nav {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  /* align-items: baseline; */
   gap: 2rem;
   text-decoration: none;
   list-style: none;
 }
 
-span .header-logo {
+
+.main-nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+header .header-logo {
+  align-items: baseline;
+  vertical-align: baseline;
   font-size: 1.8rem;
+}
+
+.header-logo span {
+  color: #fa5252;
 }
 
 .main-nav-link:link,
@@ -56,6 +77,26 @@ span .header-logo {
 .main-nav-link.view-btn:active {
   background-color: #5f3dc4;
   color: #e9e9ea;
+}
+
+
+/* MOBILE*/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+ height: 4.8rem;
+ width: 4.8rem;
+ color: #e9e9ea;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /************************************/
@@ -92,10 +133,7 @@ span .header-logo {
   align-items: center;
 }
 
-.hero-icon-play {
-  width: 8px;
-  height: 8px;
-}
+
 
 .hero-button:link,
 .hero-button:visited {
@@ -387,10 +425,6 @@ span .header-logo {
   border-bottom: 2px solid #fff;
 }
 
-.brand-box--row {
-  /* padding: 0 4rem; */
-}
-
 .brand-img--2 img {
   width: 100%;
 
@@ -427,7 +461,6 @@ span .header-logo {
   border-radius: 3px;
 }
 
-
 /************************************/
 /* NEWS SECTION*/
 /************************************/
@@ -436,16 +469,21 @@ span .header-logo {
   border-bottom: 2px solid #fff;
 }
 
+.news-gallery img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 .news-box {
   padding-bottom: 4.6rem;
 }
 
-.gallery-p{
+.gallery-p {
   color: #5f3dc4;
   margin-bottom: 1rem;
 }
 
-.gallery-text h3{
+.gallery-text h3, .news-text h3 {
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -457,15 +495,14 @@ span .header-logo {
 
 .cta {
   margin-bottom: 4.6rem;
+  padding-bottom: 4.6rem;
+  border-bottom: 2px solid #fff;
 }
 
-.cta-body{
+.cta-body {
   padding: 6rem 4rem;
   background-color: #7048e8;
-}
-
-.cta-text {
-  
+  padding-bottom: 4.6rem;
 }
 
 .cta-form {
@@ -491,8 +528,7 @@ input {
   margin-bottom: 3rem;
 }
 
-
-button {
+button.notified{
   width: 100%;
   padding: 0.7rem 1rem;
   font-family: inherit;
@@ -501,12 +537,47 @@ button {
   background-color: #fa5252;
   border: 1px solid #fa5252;
   cursor: pointer;
-  
 
   transition: all 0.3s;
 }
 
-button:hover {
+button.notified:hover {
   background-color: #f03e3e;
   border: 1px solid #fa5252;
+}
+
+/************************************/
+/* FOOTER SECTION*/
+/************************************/
+
+.footer {
+  margin-bottom: 4.6rem;
+  padding-bottom: 4.6rem;
+  border-bottom: 2px solid #fff;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+nav p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e9e9ea;
+}
+
+.footer-icon {
+  text-decoration: none;
+  /* font-size: 1.6rem; */
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: middle;
 }
